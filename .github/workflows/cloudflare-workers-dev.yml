@@ -34,5 +34,6 @@ jobs:
         CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
       run: |
-        npm i @cloudflare/wrangler -g
+        npm install @cloudflare/wrangler-cli -g
         wrangler publish
+
